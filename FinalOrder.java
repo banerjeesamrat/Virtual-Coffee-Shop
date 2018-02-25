@@ -1,6 +1,6 @@
 /*
 Project: Virtual Coffee Shop
-Author: Samrat Banerjee, Furkan Bilal Memon, Rohan Talpade
+Author: Samrat Banerjee
 Date: 25/02/2018
 */
 
