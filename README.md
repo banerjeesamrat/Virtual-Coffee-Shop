@@ -1,4 +1,6 @@
-<p align="center">
-  <img src="Virtual-Coffee-Shop/ClassDiagram.jpg" width="350"/>
-  <img src="Virtual-Coffee-Shop/Screenshot from 2018-02-25 18.07.32.png" width="350"/>
-</p>
+
+
+![Output](https://github.com/banerjeesamrat/Virtual-Coffee-Shop/blob/master/Screenshot%20from%202018-02-25%2018.07.32.png)
+
+
+![Class Diagram](https://github.com/banerjeesamrat/Virtual-Coffee-Shop/blob/master/ClassDiagram.jpg)
