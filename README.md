@@ -3,7 +3,7 @@
 
 ---
 
-
+![ClassDaigram](https://github.com/banerjeesamrat/Virtual-Coffee-Shop/blob/master/ClassDiagram.jpg)
 
 
 # Decorator Design Pattern Output
