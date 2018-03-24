@@ -1,30 +1,32 @@
 package sample;
 
-import javafx.beans.InvalidationListener;
-import javafx.collections.FXCollections;
-import javafx.collections.ListChangeListener;
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 
-
-import javax.swing.text.View;
-//import javax.swing.text.html.ListView;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.net.URL;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.ResourceBundle;
+
+
 
 public class Controller implements Initializable {
 
     @FXML
     public TextArea lview;
+    @FXML
+    public TextField bill_view;
+
+
+
+    FinalBillIterator yess = new FinalBillIterator();
+
+
     public ArrayList<Coffee> details = new ArrayList<Coffee>();
+
+
     @FXML
     Button caramel_btn;
     @FXML
@@ -37,17 +39,23 @@ public class Controller implements Initializable {
     Button milk_btn;
     @FXML
     Button next_btn;
+    @FXML
+    Button bill_btn;
+
+
+
     Coffee test;
-    StringBuffer random = new StringBuffer();
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
+
+
+
         lview.setEditable(false);
+        bill_view.setEditable(false);
 
-
-        //caramel_btn.setOnAction(e-> System.out.println("HeLLO!"));
 
         instant_btn.setOnAction(event -> test = new Instant());
 
@@ -55,8 +63,6 @@ public class Controller implements Initializable {
         caramel_btn.setOnAction(event -> {
 
             test = new Caramel(test);
-            System.out.println(test.getDescription() + " " + test.cost());
-
         });
 
 
@@ -72,7 +78,7 @@ public class Controller implements Initializable {
         next_btn.setOnAction(event -> {
 
             details.add(test);
-
+            yess.finalOrder.FinalBill.add(test);
 
             ArrayList<Coffee> dummy = new ArrayList<Coffee>();
             dummy.add(test);
@@ -82,9 +88,12 @@ public class Controller implements Initializable {
                 lview.appendText("\n" + sample.getDescription() + "  " + sample.cost());
             }
 
-
         });
+
+        bill_btn.setOnAction(event -> bill_view.setText(yess.next().toString() ) );
+
     }
+
 }
 
 

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="940.0" prefWidth="1373.0" style="-fx-background-color: maroon;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="130.0" layoutY="37.0" prefHeight="117.0" prefWidth="335.0" style="-fx-background-color: beige;" text="StarDucks" textFill="#c98736">
+         <font>
+            <Font name="EmbossedBlackWide Normal" size="54.0" />
+         </font>
+      </Label>
+      <SplitPane dividerPositions="0.44063324538258575" layoutX="66.0" layoutY="161.0" orientation="VERTICAL" prefHeight="381.0" prefWidth="444.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: yellow;">
+               <children>
+                  <Label layoutX="57.0" layoutY="14.0" prefHeight="52.0" prefWidth="315.0" style="-fx-background-color: lightgreen;" text="Choose Coffee Base " textFill="#dd0c0c">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="instant_btn" layoutX="26.0" layoutY="82.0" mnemonicParsing="false" style="-fx-background-color: black;" text="Instant " textFill="#f2eeee" />
+                  <Button fx:id="filter_btn" layoutX="353.0" layoutY="82.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: black;" text="Filter" textFill="#f8f3f3" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: pink;">
+               <children>
+                  <Label layoutX="133.0" layoutY="14.0" prefHeight="45.0" prefWidth="154.0" style="-fx-background-color: lightgreen;" text="Add Ons..." textFill="#dd1717">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="caramel_btn" layoutX="35.0" layoutY="88.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="74.0" style="-fx-background-color: black;" text="Caramel " textFill="#f5eeee" />
+                  <Button fx:id="cream_btn" layoutX="173.0" layoutY="88.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="74.0" style="-fx-background-color: black;" text="Cream " textFill="#ebe0e0" />
+                  <Button fx:id="milk_btn" layoutX="317.0" layoutY="87.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="74.0" style="-fx-background-color: black;" text="Milk" textFill="#f5eeee" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Button fx:id="next_btn" layoutX="118.0" layoutY="607.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="74.0" style="-fx-background-color: black;" text="Next" textFill="#f2ecec" />
+      <TextArea fx:id="lview" layoutX="277.0" layoutY="600.0" prefHeight="230.0" prefWidth="237.0" />
+      <ImageView fitHeight="446.0" fitWidth="674.0" layoutX="673.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ClassDiagramFinal.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="bill_btn" layoutX="621.0" layoutY="607.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="74.0" text="Get Bill " />
+      <TextField fx:id="bill_view" layoutX="767.0" layoutY="600.0" prefHeight="45.0" prefWidth="181.0" />
+   </children>
+</AnchorPane>
