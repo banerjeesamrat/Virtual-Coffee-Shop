@@ -22,3 +22,9 @@
 
 ---
 
+# How the GUI of the project looks like
+
+![FinalGUI](https://github.com/banerjeesamrat/Virtual-Coffee-Shop/blob/master/FinalGUI.png)
+
+---
+
